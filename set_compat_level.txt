@@ -1,0 +1,6 @@
+-- Changes database to run in native 2014 mode (compat level 12)
+-- To be run after the database has been restored with all log files and has started successfully
+USE [master]
+GO
+ALTER DATABASE [MyDB] SET COMPATIBILITY_LEVEL = 120
+GO
